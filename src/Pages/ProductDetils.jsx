@@ -10,7 +10,7 @@ const ProductDetils = () => {
             .then((response) => response.json())
             .then((data) => setProducts(data));
     }, [id]);
-    if (!product) return <p className='text-center mt-10 text-gray-500'>Lodding......</p>
+    if (!product) return <p className='text-center mt-10 text-white text-4xl font-bold'>Lodding...</p>
     return (
         <div className='flex justify-start items-center py-10 px-4'>
             <div className='max-w-2xl w-full bg-white shadow-lg rounde-lg p-6 rounded-xl cursor-pointer flex flex-col gap-5'>
