@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 const Cart = () => {
     const [cartItems, setCartItems] = useState([]);
 
+    // in this for fetch the data from the localstorage we use useEffect , if we dont use that then , first settgin_state->render ->set state -> render .
+    // warning like maximum update
     useEffect(() => {
         const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
         setCartItems(savedCart);
