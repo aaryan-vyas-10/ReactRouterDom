@@ -9,7 +9,7 @@ const Product = () => {
             .then((response) => response.json())
             .then((data) => setProducts(data))
     }, []);
-
+    
     return (
         <div className='p-6'>
             <h2 className='text-4xl text-black text-center font-bold mb-2'>All Products</h2>

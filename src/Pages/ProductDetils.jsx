@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 
 const ProductDetils = () => {
     const { id } = useParams();
+    console.log("id from useParams : ",id);
+    console.log("useParams : ",useParams());
     const [product, setProducts] = useState(null);
 
     useEffect(() => {
@@ -25,6 +27,24 @@ const ProductDetils = () => {
             </div>
         </div>
     )
-}
-
+} 
 export default ProductDetils
+
+
+// useParams : useParams hook is react router hook taht returns an object of key/value paris of URL Parameters 
+// and this used for the read dynamic value from the url
+
+// useParams return : useParamas always return the : object containig key-value pairs
+// exmaple : { id : 3 }   
+// exmaple  : product/:categoryId/:prodcutId
+// return : {
+            // categoryId : "5",
+            // productId : "102"
+//          }
+
+// in this following
+// keys  : params named defined in route path (categoryId,productId)
+// value : actual value from the URL 
+
+// Important Note : All value are strings, Not a numbers
+
