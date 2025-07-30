@@ -10,6 +10,7 @@ const Navbar = () => {
         <NavLink to="/product" className={({ isActive }) => isActive ? "text-blue-600" : ""}><li>Product</li></NavLink>
         <NavLink to="/about" className={({ isActive }) => isActive ? "text-blue-600" : ""}><li>About</li></NavLink>
         <NavLink to="/contact" className={({ isActive }) => isActive ? "text-blue-600" : ""}><li>Contact</li></NavLink>
+        <NavLink to="/cart" className={({ isActive }) => isActive ? "text-blue-600" : ""}><li>Cart</li></NavLink>
       </ul>
       <button className='bg-blue-900 px-6 py-2 rounded font-bold text-xl cursor-pointer'>Login</button>
     </div>

@@ -7,6 +7,7 @@ import Contact from './Pages/Contact';
 import Navbar from './Components/Navbar';
 import Layout from './Layout/Layout';
 import ProductDetils from './Pages/ProductDetils';
+import Cart from './Pages/Cart';
 
 function App() {
   const router = createBrowserRouter([
@@ -19,6 +20,7 @@ function App() {
         { path: 'product/:id', element: <ProductDetils /> },
         { path: 'about', element: <About /> },
         { path: 'contact', element: <Contact /> },
+        {path : 'cart' , element : <Cart/>}
       ],
     },
   ]);
@@ -30,3 +32,8 @@ function App() {
 }
 
 export default App
+
+
+
+// BrowserRouter : this is the simple why with JSX Concept 
+// createBrowserRouter : this is the router using the object not jsx ,  work with  : loader , action ,  errorElement , RouterProvider this all thign not supported by the Browser , this all thigs are used in the latrge scalable web-app
